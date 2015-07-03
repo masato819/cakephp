@@ -1,0 +1,22 @@
+CREATE TABLE posts(
+	id int unsigned auto_increment primary key,
+	title varchar(50),
+	body text,
+	created datetime default null,
+	modified datetime default null
+);
+
+insert into posts (title,body,created)
+	values ('タイトル','これは、記事の本文です。', NOW());
+
+insert into posts (title,body,created)
+	values ('タイトル','あいうえおです。', NOW());
+
+insert into posts (title,body,created)
+	values ('タイトル','お寿司の本文です。', NOW());
+
+insert into posts (title,body,created)
+	values ('タイトル','りょうまの本文です。', NOW());
+
+insert into posts (title,body,created)
+	values ('タイトル','あの本文です。', NOW());
